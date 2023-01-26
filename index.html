@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Project:Admin Dashboard</title>
   </head>
@@ -12,21 +13,18 @@
     <div class="navigation">
       <div class="logo">
         <svg id="icon_dashboard" viewBox="0 0 24 24">
-          <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+          <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"/>
         </svg>
         <span>Dashboard</span>
       </div>
       <nav>
         <a title="Home" href="#"
           ><svg id="icon_home" viewBox="0 0 24 24">
-            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg><span>Home</span></a
-        >
-        <a title="Profile" href="#"
-          ><svg id="icon_profile" viewBox="0 0 24 24">
+            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg><span>Home</span></a>
+        <a title="Profile" href="#"><svg id="icon_profile" viewBox="0 0 24 24">
             <path
               d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
-            /></svg><span>Profile</span></a
-        >
+            /></svg><span>Profile</span></a>
         <a title="Messages" href="#"
           ><svg id="icon_messages" viewBox="0 0 24 24">
             <path
@@ -72,10 +70,49 @@
       </nav>
     </div>
     <header class="header">
-        header
+      <div class="header-top">
+        <form>
+          <button type="submit"><i id="icon_search" class="fa fa-search"></i></button>
+          <input type="text" name="search">
+        </form>
+        <div class="header-right">
+          <i id="icon_bell" class="fa fa-bell-o" aria-hidden="true"></i>
+          <div class="profile-photo"><img src="./img/DSC_0737-copy_copy_400x500.jpg" alt="Profile Photo"></div>
+          <h2>Akul Sadananda</h2>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-bottom-left">
+          <div class="profile-photo"><img src="./img/DSC_0737-copy_copy_400x500.jpg" alt="Profile Photo"></div>
+          <div class="welcome-text"><h2>Hi there, <br/>Akul Sadananda(@nssadananda) </h2></div>
+        </div>
+        <div class="actions">
+          <a href="#">New</a>
+          <a href="#">Upload</a>
+          <a href="#">Share</a>
+      </div>
+
+      </div>
     </header>
     <main class="projects">
-        main
+      <div class="projects-wrapper">
+        <h2>Your Projects</h2>
+        <div class="project">
+          <h2 class="project-title">Projects Title</h2>
+          <div class="project-image"><img src="./img/Pig_Game.png" alt="Pig Game Image"></div>
+          <div class="project-desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae rerum fuga ad earum dolores, provident magnam assumenda itaque officiis laudantium omnis voluptates.</p>
+          </div>
+          <div class="actions">
+            <a href="#">Git Hub link</a>
+            <a href="#">live Preview</a>
+          </div>
+        </div>
+      </div>
+      <aside>
+        
+      </aside>
+
     </main>
   </body>
 </html>
